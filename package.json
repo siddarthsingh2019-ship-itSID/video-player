@@ -1,0 +1,25 @@
+{
+  "name": "video-player",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Repository metadata and validation tooling for the video-player project.",
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test",
+    "validate": "npm run lint && npm run format:check && npm run typecheck && npm run test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "eslint": "^9.23.0",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2"
+  }
+}
